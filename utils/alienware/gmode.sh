@@ -8,7 +8,7 @@ if [ "$current_profile" = "throughput-performance" ]; then
     if [ "$is_ac" -eq "1" ]; then
     	tuned-adm profile balanced
     else
-    	tuned-adm profile powersave
+    	tuned-adm profile balanced-battery
     fi
 else
     tuned-adm profile throughput-performance
